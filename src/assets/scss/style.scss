@@ -1,0 +1,81 @@
+#app {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.list_inner {
+  cursor: pointer;
+	&:hover {
+		transition: all 0.3s ease-in-out;
+		background-color:burlywood;
+	}
+	.room_img {
+		margin-top: 20px;
+		width: 100%;
+	}
+}
+.list {
+
+	.list_bottom {
+		margin-bottom: 10px;
+	}
+}
+
+
+.black_bg {
+	box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  padding: 20px;
+	.white_bg {
+		box-sizing: border-box;
+		width: 100%;
+		background: white;
+		border-radius: 8px;
+		padding: 20px;
+		position: relative;
+	}
+	.modal_close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		background-color: black;
+		border-radius: 5px;
+		font-size: 20px;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.menu {
+  background: darkslateblue;
+  padding: 15px;
+  border-radius: 5px;
+	a {
+		color: white;
+  	padding: 10px;
+	}
+}
+
+// .v-enter-active, .v-leave-active {
+// 	transition: opacity 1s;
+// }
+
+// .v-enter, .v-leave-to {
+// 	opacity: 0;
+// }
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
